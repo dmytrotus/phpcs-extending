@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<ruleset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         name="DmytrosCustomCodeStyleStandard"
+         xsi:noNamespaceSchemaLocation="/Users/[your_username]/.composer/vendor/squizlabs/php_codesniffer/src/Standards/PSR12/phpcs.xsd">
+
+    <description>Dmytros custom coding standard extending PSR-12 with additional sniffs.</description>
+
+    <!-- Include PSR-12 ruleset -->
+    <rule ref="PSR12"/>
+
+    <!-- Add additional custom rules -->
+    <rule ref="DmytrosCustomCodeStyleStandard.Functions.RequireReturnType"/>
+    <rule ref="DmytrosCustomCodeStyleStandard.Functions.RequireArgumentType"/>
+
+    <!-- You can also exclude certain PSR-12 rules if needed -->
+    <!-- <exclude name="Some.PSR12.Rule"/> -->
+</ruleset>
